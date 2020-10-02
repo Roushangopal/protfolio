@@ -12,10 +12,6 @@ export class StudentDetailService {
 
   constructor(private http:HttpClient) { }
   getStudent():Observable<studentDetail[]>{
-    // return[
-    //   {name:"Roushan", currentCourse:"be", courseDuration:"2017-2021", occupation:"software engineering",
-    // email:"roushan@gmail.com", mobNo:"9060289830" }
-    // ]
     return this.http.get<studentDetail[]>(this.url);
   }
 }
