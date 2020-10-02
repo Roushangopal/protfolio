@@ -1,0 +1,55 @@
+.containercollege, .containerschool, .containerpuc{
+    border: 2px solid black;
+    margin: 5px;
+    /* width: 33.33%; */
+}
+.education{
+    width: 70.33%;
+}
+.education h1{
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+}
+.education h3{
+    text-align: center;
+    font-style: italic;
+}
+.education p{
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+}
+.containercollege img{
+    width: 200px;
+    height: 150px;
+    float: right;
+    border-radius: 50%;
+}
+.containerpuc img{
+    width: 200px;
+    height: 150px;
+    float: left;
+    border-radius: 50%;
+}
+.containerschool img{
+    width: 200px;
+    height: 150px;
+    float: right;
+    border-radius: 50%;
+}
+.containerpuc .education{
+    width: 100%;
+}
+@media only screen and (max-width:800px){
+    .containercollege img{
+        height: 190px;
+    }
+    .containerpuc img{
+        height: 190px;
+    }
+    .containerschool img{
+        height: 190px;
+    }
+
+}

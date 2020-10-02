@@ -1,0 +1,41 @@
+#name{
+    text-align: center;
+    font-style: italic;
+
+}
+.profilepic img:hover{
+    /* transform: translate(10px, 10px); */
+    box-shadow: 5px #666;
+    transition-duration: 0.4s;
+    width: 250px;
+    box-shadow: 0px 5px #666;
+}
+.profilepic img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+
+}
+.occupation{
+    text-align: center;
+}
+.occupation p{
+    line-height: normal;
+    letter-spacing: 1px;
+    font-size: large;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.contact{
+    text-align: center;
+}
+@media only screen and (max-width:800px){
+    .occupation p{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}

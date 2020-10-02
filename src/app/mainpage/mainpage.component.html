@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 id="name">{{student1?.name}}</h1>
+    <div class="profilepic">
+        <img [src]=profileimg alt="{{student1?.name}}" />
+        <div class="occupation">
+            <h2>{{student1?.occupation | titlecase}}</h2>
+            <h4><strong>{{student1?.currentCourse | uppercase}} ({{student1?.courseDuration}})</strong></h4>
+            <p>Software engineering is a branch of computer science which includes the development and building of
+                computer systems software and applications software. Computer systems software is composed of programs
+                that include
+                computing utilities and operations systems. Applications software consists of user-focused programs that
+                include web browsers, database programs, etc.</p>
+        </div>
+        <div class="contact">
+            <h2>Contact Details</h2>
+            <p><strong>Email : </strong><i>{{student1?.email}}</i></p>
+            <p><strong>Mob No : </strong><i>{{student1?.mobNo}}</i></p>
+
+        </div>
+    </div>
+</div>
