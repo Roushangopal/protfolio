@@ -45,6 +45,10 @@ const studentDetail = new schema({
                 type: String,
                 required: true
             },
+            batch: {
+                type: String,
+                required: true
+            },
             aggregate: {
                 type: String,
                 required: true
@@ -56,6 +60,10 @@ const studentDetail = new schema({
                 required: true
             },
             board: {
+                type: String,
+                required: true
+            },
+            batch: {
                 type: String,
                 required: true
             },

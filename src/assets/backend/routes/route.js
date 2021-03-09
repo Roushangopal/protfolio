@@ -3,9 +3,15 @@ const studentDetail = require('../models/studentDetail')
 
 const router = express.Router();
 
-router.get('/student', (req, res, next) => {
+router.get('/', (req, res, next) => {
     res.send('Roushan Raja')
-})
+});
+
+router.get('/student', (req, res) => {
+    studentDetail.find((err, student) => {
+        res.json(student);
+    })
+});
 
 router.post('/student', (req, res, next) => {
     let newStudent = new studentDetail({
@@ -14,22 +20,22 @@ router.post('/student', (req, res, next) => {
         mob: req.body.mob,
         education: {
             school: {
-                name: req.body.schoolName,
-                board: req.body.schoolBoard,
-                batch: req.body.schoolBatch,
-                aggregate: req.body.schoolAggregate
+                name: req.body.education.school.name,
+                board: req.body.education.school.board,
+                batch: req.body.education.school.batch,
+                aggregate: req.body.education.school.aggregate
             },
             puc: {
-                name: req.body.pucName,
-                board: req.body.pucBoard,
-                batch: req.body.pucBatch,
-                aggregate: req.body.pucAggregate
+                name: req.body.education.puc.name,
+                board: req.body.education.puc.board,
+                batch: req.body.education.puc.batch,
+                aggregate: req.body.education.puc.aggregate
             },
             college: {
-                name: req.body.collegeName,
-                board: req.body.collegeBoard,
-                batch: req.body.collegeBatch,
-                aggregate: req.body.collegeAggregate
+                name: req.body.education.college.name,
+                board: req.body.education.college.board,
+                batch: req.body.education.college.batch,
+                aggregate: req.body.education.college.aggregate
             }
         }
     });

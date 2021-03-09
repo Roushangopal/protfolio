@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyparser = require('body-parser');
 
-mongoose.connect('mongodb://localhost:27017/studentlist')
+mongoose.connect('mongodb://localhost:27017/studentlist', {useNewUrlParser : true, useUnifiedTopology: true });
 
 mongoose.connection.on('connected', () => {
     console.log('Connected DB through port @27017');
