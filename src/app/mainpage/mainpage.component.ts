@@ -18,7 +18,7 @@ export class MainpageComponent implements OnInit {
     this.studentDetail.getStudent()
       .subscribe(data => {
         this.student = data;
-        this.student1 = this.student[0];
+        this.student1 = this.student[1];
       });
 
 

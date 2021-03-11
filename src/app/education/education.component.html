@@ -1,24 +1,24 @@
 <div class="containercollege">
     <img src="../../assets/images/college.jpeg"/>
     <div class="education">
-        <h1>{{collegeName}}, {{collegeAdress}}</h1>
+        <h1>{{student1?.education.college.name}}, {{collegeAdress}}</h1>
         <h3>{{course}} ({{courseDuration}})</h3>
-        <p>Aggregate : {{aggregatecollege}} CGPA</p>
+        <p>Aggregate : {{student1?.education.college.aggregate}} CGPA</p>
     </div>
 </div>
 <div class="containerpuc">
     <img src="../../assets/images/puc.jpg"/>
     <div class="education">
-        <h1>{{pucName}}, {{pucAdress}}</h1>
+        <h1>{{student1?.education.puc.name}}, {{pucAdress}}</h1>
         <h3>{{coursePuc}} ({{pucDuration}})</h3>
-        <p>Aggregate : {{aggregatePuc}} %</p>
+        <p>Aggregate : {{student1?.education.puc.aggregate}} %</p>
     </div>
 </div>
 <div class="containerschool">
     <img src="../../assets/images/school.jpg"/>
     <div class="education">
-        <h1>{{schoolName}}, {{schoolAdress}}</h1>
+        <h1>{{student1?.education.school.name}}, {{schoolAdress}}</h1>
         <h3>{{courseSchool}} ({{schoolDuration}})</h3>
-        <p>Aggregate : {{aggregateSchool}} CGPA</p>
+        <p>Aggregate : {{student1?.education.school.aggregate}} CGPA</p>
     </div>
 </div>

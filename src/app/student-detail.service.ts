@@ -8,7 +8,7 @@ import {HttpClient} from '@angular/common/http'
   providedIn: 'root'
 })
 export class StudentDetailService {
-  url = "../assets/student.json"
+  url = "http://localhost:3000/Student";
 
   constructor(private http:HttpClient) { }
   getStudent():Observable<studentDetail[]>{
